@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkslategrey;
+}
+
+/* 
+  This is a CSS Comment
+  Shortcut for adding the comment Control + / or Command + /
+*/
+
+h1 {
+  color: white;
+}
+
+p {
+  background-color: lightblue;
+}
+
+/* Selecting multiple elements to add same styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: underline;
+}
+
+/* Selecting child elements */
+nav ul {
+  list-style: none;
+}
+
+/* Selecting child elements multiple level */
+nav ul a {
+  color: darkslategrey;
+  text-decoration: none;
+}
+
+/* Selecting class name to style HTML element(s) */
+.orange-text {
+  background: darkslategrey;
+  color: orange;
+  text-decoration: none;
+}
+
+/* Selecting id value for styling the element */
+#tow {
+  background: orange;
+}
