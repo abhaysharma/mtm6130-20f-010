@@ -53,7 +53,15 @@ nav ul a {
   background-size: cover;
   /* additional styles to make text visible */
   color: white;
-  font-size: 24px;
+  /* font-size: 24px; */
+  /* updating font-size to rem 1.5 x 16 = 24 */
+  font-size: 1.5rem;
+
+  /* Adding padding to add space between the border and content */
+  padding: 1em;
+  /* 1em = 1 x 24 = 24px */
+  /* Adding width using viewport width unit */
+  width: 50vw;
 }
 
 /* We can add multiple classes to one element */
