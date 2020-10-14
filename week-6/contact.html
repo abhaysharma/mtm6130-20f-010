@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reggie's Coffee Shop - Contact</title>
+</head>
+
+<body>
+  <!-- Add the proper page structure for this document -->
+  <!-- Shortcut for comment block - control + / or Command + / -->
+  <!-- Header of the site -->
+  <header>
+    <h1>Reggie's Coffee Shop</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main content of the site -->
+  <main>
+    <h2>Contact Us</h2>
+    <table>
+      <caption>Hours of Operation</caption>
+      <thead>
+        <tr>
+          <th>Days</th>
+          <th>Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mon - Fri</td>
+          <td>6 AM - 9 PM</td>
+        </tr>
+        <tr>
+          <td>Sat</td>
+          <td>8 AM - 11 PM</td>
+        </tr>
+        <tr>
+          <td>Sun</td>
+          <td>Closed</td>
+        </tr>
+      </tbody>
+    </table>
+    <section>
+      <h3>We love to hear from you!</h3>
+      <!-- adding a form -->
+      <form action="thanks.html" method="post">
+        <div>
+          <label for="fullname">Your Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" value="Mr. ">
+        </div>
+        <div>
+          <label for="youremail">Email</label>
+          <input type="email" id="youremail" name="youremail" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <div>
+          <label for="tickets">How many tickets? (sold in pairs)</label>
+          <input type="number" name="tickets" id="tickets" min="2" max="10" step="2">
+        </div>
+        <div>
+          <label for="row">Select Row</label>
+          <select name="row" id="row">
+            <option value="front">Front</option>
+            <option value="center" selected>Center</option>
+            <option value="back">Back</option>
+          </select>
+        </div>
+        <div>
+          <h3>Have you been here before?</h3>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="past">
+
+          <label for="no">No</label>
+          <input type="radio" id="no" name="past">
+        </div>
+        <div>
+          <h3>Policies</h3>
+          <input type="checkbox" name="policies" id="policies" required checked>
+          <label for="policies">I agree with the Terms and Policies.</label>
+        </div>
+        <button type="submit">Sign me up!</button>
+      </form>
+    </section>
+  </main>
+  <!-- footer of the site -->
+  <footer>
+    <!-- HTML Entities -->
+    Copyright &copy; Reggie&apos;s Coffee Shop, 2020 &dollar;20
+  </footer>
+</body>
+
+</html>
