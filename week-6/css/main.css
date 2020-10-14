@@ -48,7 +48,12 @@ nav ul a {
 
 /* Selecting id value for styling the element */
 #tow {
-  background: orange;
+  /* color image repeat x-axis y-axis */
+  background: orange url("../images/bread.jpg") no-repeat center center;
+  background-size: cover;
+  /* additional styles to make text visible */
+  color: white;
+  font-size: 24px;
 }
 
 /* We can add multiple classes to one element */
