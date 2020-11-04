@@ -154,6 +154,12 @@ body {
   line-height: inherit;
 }
 
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 img {
   width: 100%;
 }
@@ -202,4 +208,96 @@ h5 {
 
 p {
   margin: 1em 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* header */
+.mobile-logo {
+  max-width: 150px;
+}
+
+.desktop-logo {
+  display: none;
+}
+
+.banner {
+  height: 600px;
+  background: grey url("../images/mobile-banner.jpg") no-repeat center bottom;
+  background-size: cover;
+}
+
+.banner h1 {
+  margin: 0;
+  padding-top: 250px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* mobile app section */
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #00ADD8;
+  color: inherit;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 20px;
+  border-top: 2px solid #00ADD8;
+  padding: 20px 0;
+}
+
+.site-footer .copy {
+  text-align: right;
+}
+
+/* --------------------------
+      Desktop Styles
+---------------------------- */
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .desktop-logo {
+    display: inline-block;
+    max-width: 300px;
+  }
+
+  .banner {
+    background-image: url("../images/desktop-banner.jpg");
+  }
+
+  .banner h1 {
+    color: white;
+  }
+
+  /* app section */
+  .app img {
+    width: 40%;
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  .app .btn {
+    float: right;
+  }
 }
